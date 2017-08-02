@@ -1,0 +1,109 @@
+.title {
+  color: white;
+  font-family: Lobster;
+  margin-top: 70px;
+}
+
+body {
+  background-color: #c0c0c0 !important;
+}
+
+.subtitle {
+  color: white;
+  font-family: cursive;
+}
+
+.navheader {
+  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+}
+
+.navbar-custom {
+  background-color: #8aacb8;
+  height: 30px;
+  font-family: lobster;
+  font-size: 125%;
+}
+
+li {
+  height: 30px;
+  border-right: 1px solid #000000;
+  margin-top: 10px;
+  color: white;
+}
+li:last {
+  border-right: none;
+}
+
+li a:hover {
+  background-color: white;
+  color: gray;
+}
+
+.profilepic {
+  display: block;
+  margin-left: 590px;
+  margin-top: 50px;
+}
+
+.buttons {
+  margin-top: 50px;
+  margin-left: 550px;
+}
+
+.mywork {
+  text-align: center;
+  font-family: cursive;
+  color: white;
+  margin-top: 100px;
+}
+
+hr.navdivider {
+  
+}
+
+hr.divider { 
+  height: 100px; 
+  width: 1300px;
+  margin-top: 200px;
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.divider:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+.jumbotron {
+  margin-top: 100px;
+  padding: 100px !important;
+  height: 100px !important;
+  background-color: #aaaaaa !important;
+  border-radius: 50px !important;
+}
+
+#aboutme {
+  color: black;
+  text-align: center;
+}
+
+.contactinfo {
+  margin-top: 1000px;
+  border: 6px solid green;
+  color: white;
+  width: 250px;
+  padding: 25px;
+}
+
+.projectpic1 {
+  margin-top: 50px;
+  display: block;
+  margin: auto;
+}
