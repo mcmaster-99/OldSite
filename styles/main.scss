@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Fugaz+One|Graduate|Raleway);
+
+$bg-color: #DCDCDC;
+$font1: Fugaz One, cursive;
+$font2: Graduate, cursive;
+$font3: Raleway, sans-serif;
+
+body {
+    background-color: #F5F5F5;
+    background-image: url('https://images.pexels.com/photos/205316/pexels-photo-205316.png?w=940&h=650&auto=compress&cs=tinysrgb');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+}
+
+.title {
+    color: navy;
+    font-family: $font1;
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+.subtitle {
+    color: navy;
+    font-family: $font2;
+    margin: 75px auto 0 405px;
+    width: 450px;
+}
+
+.btn-group-wrap {
+    text-align: center;
+    margin: 30px 25px 0px 0px;
+}   
+.btn {
+    background: transparent;
+    border: navy;
+}
+
+#mywork {
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    margin-top: 500px;
+}
+
+#projects {
+    color: navy;
+    font-family: $font3;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#project3 {
+    margin-top: 50px;
+}
+#project4 {
+    margin-top: 50px;
+}
+
+#goUp {
+    margin-top: 10px;
+    color: navy;
+}
+
+#aboutme {
+    color: black;
+    text-align: center;
+}
+
+.contactinfo {
+    margin-top: 1000px;
+    border: 6px solid green;
+    color: white;
+    width: 250px;
+    padding: 25px;
+    color: black;
+}

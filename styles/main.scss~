@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Fugaz+One|Graduate);
+
+$bg-color: #DCDCDC;
+$font1: Fugaz One, cursive;
+$font2: Graduate, cursive;
+
+body {
+    background-color: #F5F5F5;
+    background-image: url('https://static.pexels.com/photos/293336/pexels-photo-293336.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title {
+    color: navy;
+    font-family: $font1;
+    margin-top: 75px;
+}
+
+.aParent {
+	float: left;
+	clear: none;
+}
+
+.subtitle {
+    color: navy;
+    font-family: $font2;
+    font-size: 25px;
+    margin-left: 100px;
+    text-align: center;
+    width: 400px;
+    border: solid black;
+}
+
+.navbar-nav {
+	float: none;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+}
+
+
+
+.profilepic {
+	border: solid black;
+   height: 250px;
+   width: 250px;
+   margin-left: 850px;
+}
+
+.buttons {
+    margin-top: 50px;
+    margin-left: 550px;
+}
+
+.mywork {
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    margin-top: 100px;
+}
+
+hr.divider { 
+    height: 100px; 
+    width: 1300px;
+    margin-top: 200px;
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px; 
+} 
+hr.divider:before { 
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px; 
+}
+
+#aboutme {
+    color: black;
+    text-align: center;
+}
+
+.contactinfo {
+    margin-top: 1000px;
+    border: 6px solid green;
+    color: white;
+    width: 250px;
+    padding: 25px;
+    color: black;
+}
+
+.projectpic1 {
+    margin-top: 50px;
+    display: block;
+    margin: auto;
+}

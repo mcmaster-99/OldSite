@@ -1,98 +1,65 @@
-.title {
-  color: white;
-  font-family: Lobster;
-  margin-top: 70px;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Fugaz+One|Graduate|Raleway);
 body {
-  background-color: #c0c0c0 !important;
-}
+  background-color: #F5F5F5;
+  background-image: url("https://images.pexels.com/photos/205316/pexels-photo-205316.png?w=940&h=650&auto=compress&cs=tinysrgb");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center; }
+
+.navbar-nav > li {
+  display: inline-block;
+  float: none; }
+
+.title {
+  color: navy;
+  font-family: Fugaz One, cursive;
+  font-size: 50px;
+  margin-top: 60px; }
 
 .subtitle {
-  color: white;
-  font-family: cursive;
-}
+  color: navy;
+  font-family: Graduate, cursive;
+  margin: 75px auto 0 405px;
+  width: 450px; }
 
-.navheader {
-  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
-}
+.btn-group-wrap {
+  text-align: center;
+  margin: 30px 25px 0px 0px; }
 
-.navbar-custom {
-  background-color: #8aacb8;
-  height: 30px;
-  font-family: lobster;
-  font-size: 125%;
-}
+.btn {
+  background: transparent;
+  border: navy; }
 
-li {
-  height: 30px;
-  border-right: 1px solid #000000;
-  margin-top: 10px;
-  color: white;
-}
-li:last {
-  border-right: none;
-}
-
-li a:hover {
-  background-color: white;
-  color: gray;
-}
-
-.profilepic {
-  display: block;
-  margin-left: 590px;
-  margin-top: 50px;
-}
-
-.buttons {
-  margin-top: 50px;
-  margin-left: 550px;
-}
-
-.mywork {
+#mywork {
   text-align: center;
   font-family: cursive;
   color: white;
-  margin-top: 100px;
-}
+  margin-top: 500px; }
 
-hr.navdivider {
-  
-}
+#projects {
+  color: navy;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px; }
 
-hr.divider { 
-  height: 100px; 
-  width: 1300px;
-  margin-top: 200px;
-  border-style: solid; 
-  border-color: #8c8b8b; 
-  border-width: 1px 0 0 0; 
-  border-radius: 20px; 
-} 
-hr.divider:before { 
-  display: block; 
-  content: ""; 
-  height: 30px; 
-  margin-top: -31px; 
-  border-style: solid; 
-  border-color: #8c8b8b; 
-  border-width: 0 0 1px 0; 
-  border-radius: 20px; 
-}
+#project3 {
+  margin-top: 50px; }
 
-.jumbotron {
-  margin-top: 100px;
-  padding: 100px !important;
-  height: 100px !important;
-  background-color: #aaaaaa !important;
-  border-radius: 50px !important;
-}
+#project4 {
+  margin-top: 50px; }
+
+#goUp {
+  margin-top: 10px;
+  color: navy; }
 
 #aboutme {
   color: black;
-  text-align: center;
-}
+  text-align: center; }
 
 .contactinfo {
   margin-top: 1000px;
@@ -100,10 +67,4 @@ hr.divider:before {
   color: white;
   width: 250px;
   padding: 25px;
-}
-
-.projectpic1 {
-  margin-top: 50px;
-  display: block;
-  margin: auto;
-}
+  color: black; }

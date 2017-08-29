@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,68 +23,96 @@
 
 <header>
   <!-- NAVIGATION BAR -->
-  <div style="container">
+  <div class="container">
     <body data-spy="scroll" data-target=".navbar" data-offset="5">
-      <nav class="navbar navbar-custom navbar-fixed-top" style="border-radius: 10px">
-        <a class="navbar-brand" href="#">Bilal Hjiouaj</a>
-        <ul class="nav navbar-nav" style="margin-left:370px">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#aboutme">About Me</a></li>
-          <li><a href="#mywork">My Work</a></li>
-          <li><a href="#contactme">Contact Me</a></li>
-        </ul>
-      </nav>
-      <hr class="navdivider">
-  </div>
 
-  <!-- TITLE AND SUBTITLE-->
-  <div id="home">
-    <h1 class="title text-center">
-      Web Developer
-    </h1>
-    <h4 class="subtitle text-center">Specializing in Front End Development while working my way to Full Stack.</h4>
+      <nav id="up" class="navbar navbar-custom">
+
+        <ul class="nav navbar-nav">
+          <li><a id="homeLink" href="#homeLink">Home</a></li>
+          <li><a id="myWorkLink" href="#mywork">My Work</a></li>
+          <li><a id="contactMeLink" href="#contactme">Contact Me</a></li>
+        </ul>
+
+      </nav>
+
   </div>
 </header>
 
-<body>
-  <!-- PROFILE PIC -->
-  <img src="https://s11.postimg.org/b67e76i3n/IMG_5792.png" class="img-circle profilepic" height="150" width="150" />
+<!-- TITLE -->
+<div>
+    <h1 class="title text-center">
+    Web Developer
+    </h1>
+</div>
 
-  <!-- BUTTONS -->
-  <div class="buttons">
-    <div class="col-xs-6">
-      <button type="button" class="btn btn-primary">LinkedIn</button>
-      <button type="button" class="btn btn-primary">Facebook</button>
-      <button type="button" class="btn btn-info">Blog</button>
+<!-- SUBTITLE -->
+
+<div class="subtitle">
+	<h4>
+  	Aspiring web developer keeping it simple by creating
+  	simple responsive applications. I enjoy learning a
+  	thing or two every day to better my skills and
+  	present them to the world. 
+	</h4>
+</div>
+
+  <!-- ============================
+  ===== SOCIAL LINK BUTTONS =====
+  ============================= -->
+<div class="btn-group-wrap">
+    <div class="btn-group">
+        <button type="button" class="btn">LinkedIn</button>
+        <button type="button" class="btn">Github</button>
+        <button type="button" class="btn">Blog</button>
     </div>
-  </div>
-  
-  <!-- DIVIDER -->
-  <hr class="divider"
+</div>
 
-  <!--SAMPLE PROJECT IMAGES-->
-  <div id="mywork">
-    <br>
-    <h2 class="mywork">
+
+
+  <!-- ============================
+  ===== SAMPLE PROJECT LINKS ======
+  ============================= -->
+<div id="mywork">
+
+    <h2 id="projects">
       Projects
     </h2>
-    <img src="https://s18.postimg.org/k31fgcux5/portfolioimage1.png" class="projectpic1 img-rounded" width="300px" height="200px" />
-  </div>
-  
-<!-- DIVIDER -->  
-<hr class="divider">  
 
-  <!--ABOUT ME (JUMBOTRON)-->
-  <div class="container">
-    <div class="jumbotron">
-      <div id="aboutme">
-        <h2>About Me</h2>
-        <p>I'm a fast, motivated, self-learner who enjoys coding and writing software.<br> I've learned quite a bit of Python, Java, and C++ over the past year<br>but recently have delved into the world of Web Development.</p>
+    <div class="section1">
+      <div id="project1" class="col-md-6">
+          <a href="quote.html">
+              <img src="/images/quote-generator.png" class="img-rounded" width="300px" height="200px"/>
+          </a>
+      </div>
+
+      <div id="project2" class="col-md-6">
+          <a href="weather.html">
+              <img src="/images/weather.png" class="img-rounded" width="300px" height="200px"/>
+          </a>
       </div>
     </div>
-  </div>
 
-  <!-- CONTACT ME -->
+    <div class="section2">
+      <div id="project3" class="col-md-6">
+          <a href="twitchtv.html">
+              <img src="/images/twitchtv.png" class="img-rounded" width="300px" height="200px"/>
+          </a>
+      </div>
+
+      <div id="project4" class="col-md-6">
+          <a href="wikiviewer.html">
+              <img src="/images/wikiviewer.png" class="img-rounded" width="300px" height="200px"/>
+          </a>
+      </div>
+    </div>
+
+    <button id="goUp" class="btn">Home</button>
+
+</div>
+
+
+  <!-- CONTACT ME SECTION -->
   <div id="contactme">
     <div class="contactinfo">
       <p>Contact Form</p>
@@ -94,8 +123,9 @@
       </b>
     </div>
     <button class="btn btn-default">Submit</button>
+    <button id="goUp" class="btn">Up</button>
   </div>
-  <script type="text/javascript" src="scripts/script.js"></script>
+  <script type="text/javascript" src="scripts/main-script.js"></script>
 </body>
 
 </html>

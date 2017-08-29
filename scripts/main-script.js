@@ -1,0 +1,26 @@
+$(document).ready(function() {
+	
+	$("#goUp, #aboutMeLink, #myWorkLink, #contactMeLink").click(function(e) {
+		e.preventDefault();
+
+		var target;
+
+		if ($(this).get(0).id == "goUp") {
+			target = $("#homeLink");
+		} else if ($(this).get(0).id == "myWorkLink") {
+			target = $("#mywork");
+		} else if ($(this).get(0).id == "contactMeLink") {
+			target = $("#contactme");
+		} else if ($(this).get(0).id == "aboutMeLink") {
+			target = $("#aboutme");
+		} else {
+			target = $("#contactMeLink");
+		}
+
+		$("html, body").stop().animate({
+			scrollTop: target.offset().top-60
+		}, 1000);
+
+	});
+
+});

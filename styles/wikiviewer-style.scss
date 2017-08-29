@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background: lightblue;
+}
+
+form {
+  width: 500px;
+  margin: 100px auto;
+  margin-left: 500px;
+}
+
+.search {
+  padding: 5px 20px;
+  background: rgba(50, 50, 50, 0.2);
+  border: 0px solid #dbdbdb;
+}
+
+.button {
+  position: relative;
+  padding: 3px 15px;
+  left: -8px;
+  border: 2px solid black;
+  background-color: #207cca;
+  color: white;
+}
+.button:hover {
+  border: 3px solid black;
+  background-color: #207cca;
+  color: white;
+}
+
+#copyright p {
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 5px;
+}
