@@ -1,15 +1,32 @@
-@import url(https://fonts.googleapis.com/css?family=Fugaz+One|Graduate|Raleway);
+@import url(https://fonts.googleapis.com/css?family=Fugaz+One|Graduate|Raleway|Open+Sans+Condensed:300);
 
-$bg-color: #DCDCDC;
-$font1: Fugaz One, cursive;
-$font2: Graduate, cursive;
-$font3: Raleway, sans-serif;
+$grey: #DCDCDC;
+$light-grey: #EDEDED;
+$Fugaz: Fugaz One, cursive;
+$Graduate: Graduate, cursive;
+$Raleway: Raleway, sans-serif;
+$Josefin: Open Sans Condensed, sans-serif;
 
-body {
-    background-color: #F5F5F5;
-    background-image: url('https://images.pexels.com/photos/205316/pexels-photo-205316.png?w=940&h=650&auto=compress&cs=tinysrgb');
+
+/*  ======================
+    ======= Page 1 =======
+    ====================== */
+.parallax {
+    
+    background-image: 
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ),
+        url('/images/body-background.jpeg');
+
+    height: 1000px;
+
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+
 }
 
 .navbar-nav {
@@ -23,66 +40,195 @@ body {
     display: inline-block;
     float: none;
 }
+.navbar-nav > li > a {
+    color: white;
+}
+.navbar-nav > li > a:hover {
+    background: transparent;
+    color: light-gray;
+}
 
 .title {
-    color: navy;
-    font-family: $font1;
-    font-size: 50px;
-    margin-top: 60px;
+    color: white;
+    font-family: $Josefin;
+    font-size: 100px;
+    margin: 225px;
+    text-align: center;
 }
 
 .subtitle {
-    color: navy;
-    font-family: $font2;
-    margin: 75px auto 0 405px;
+    color: white;
+    font-family: $Josefin;
+    margin: 75px auto 0 425px;
     width: 450px;
 }
 
-.btn-group-wrap {
-    text-align: center;
-    margin: 30px 25px 0px 0px;
-}   
+.btn-container {
+    margin: -50px auto 50px auto;
+    width: 27%;
+}
 .btn {
     background: transparent;
-    border: navy;
+    border: 1px solid white;
+    font-size: 25px;
+    font-family: $Josefin;
+    height: 50px;
+    width: 100px;
+}
+a {
+    color: white;
+    margin-left: 20px;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+}
+a:hover {
+    background-color: black;
+    color: white !important;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+}
+a:active {
+    color: white;
+    margin-left: 20px;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+}
+
+
+/*  ======================
+    ======= Page 2 =======
+    ====================== */
+
+.Divider {
+    background: white;
+    height: 100px;
+    width: 100%;
+}
+
+#projects-title > p {
+
+    color: black;
+    font-family: $Josefin;
+    font-size: 50px;
+    margin: 0px auto 0px auto;
 }
 
 #mywork {
+
+    background-image: 
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ),
+        url('/images/body-background2.jpeg');
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 1000px;
+
+
     text-align: center;
     font-family: cursive;
+    margin-top: 175px;
+}
+
+#project1, #project2 {
+    margin-top: 100px;
+}
+
+#project3, #project4 {
+    margin-top: 50px;
+}
+
+.goUp-btn-container {
+    width: 140px;
+    margin: 50px auto 0px auto;
+}
+#goUp-button {
     color: white;
-    margin-top: 500px;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+}
+#goUp-button:hover {
+    background-color: black;
+    color: white !important;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
 }
 
-#projects {
-    color: navy;
-    font-family: $font3;
-    font-weight: bold;
-    margin-bottom: 50px;
-}
 
-#project3 {
-    margin-top: 50px;
-}
-#project4 {
-    margin-top: 50px;
-}
 
-#goUp {
-    margin-top: 10px;
-    color: navy;
-}
+/*  ======================
+    ======= Page 3 =======
+    ====================== */
 
-#aboutme {
+#contact-title {
+
     color: black;
     text-align: center;
+    font-family: $Josefin;
+    font-size: 50px;
+    font-weight: bold;
 }
 
-.contactinfo {
-    margin-top: 1000px;
-    border: 6px solid green;
-    color: white;
-    width: 250px;
-    padding: 25px;
-    color: black;
+#contactMeContainer {
+    
+    background-image: 
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ),
+        url('/images/body-background.jpeg');
+
+    height: 755px;
+    margin-top: -20px; /*Needed to do this to prevent white
+                        space above divider for some reason*/
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#contactme {
+
+    box-shadow: 0px 0px 10px navy;
+    border: solid navy;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: $light-grey;
+    width: 50%;
+    height: 400px;
+    margin: 50px auto 0px auto;
+
+}
+#subject {
+    height: 100px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px auto 16px auto;
+    resize: vertical;
+}
+input[type=submit] {
+
+    background-color: $grey;
+    color: navy;
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin: 0 auto 0 40%;
+}
+input[type=submit]:hover {
+    
 }

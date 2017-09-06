@@ -7,7 +7,8 @@ var gulp = require('gulp');
 
 var jsSource = ['scripts/*.js'],
 	sassSource = ['styles/*.scss'],
-	htmlSource = ['*.html']
+	htmlSource = ['*.html'],
+	phpSource = ['*.php']
 	output = 'assets';
 
 
@@ -54,4 +55,9 @@ gulp.task('html', function(){
 	.pipe(connect.reload())
 });
 
-gulp.task('default', ['js', 'sass', 'connect', 'watch', 'html']);
+gulp.task('php', function(){
+	gulp.src(phpSource)
+	.pipe(connect.reload())
+});
+
+gulp.task('default', ['js', 'sass', 'connect', 'watch', 'html', 'php']);

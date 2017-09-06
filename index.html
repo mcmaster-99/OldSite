@@ -1,131 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Bilal&#39;s Portfolio Site</title>
-  <meta name="description" content="A portfolio of all my projects, current and past.">
+<title>Bilal&#39;s Portfolio Site</title>
+<meta name="description" content="A portfolio of all my projects, current and past.">
 
-  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 
-  <link rel="stylesheet" href="assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
-  <link rel="alternate" type="application/rss+xml" title="Bilal&#39;s Portfolio Site" href="/feed.xml">
+<link rel="stylesheet" href="assets/main.css">
+<link rel="canonical" href="http://localhost:4000/">
+<link rel="alternate" type="application/rss+xml" title="Bilal&#39;s Portfolio Site" href="/feed.xml">
   
   
-</head>
+<!--
+===========================================
+===========================================
+============== LANDING PAGE ===============
+===========================================
+===========================================
+-->
+<div class="parallax">
 
-
-<header>
   <!-- NAVIGATION BAR -->
   <div class="container">
     <body data-spy="scroll" data-target=".navbar" data-offset="5">
 
       <nav id="up" class="navbar navbar-custom">
 
+        <!-- ============================
+        ======== NAVIGATION BAR =========
+        ============================= -->
         <ul class="nav navbar-nav">
           <li><a id="homeLink" href="#homeLink">Home</a></li>
           <li><a id="myWorkLink" href="#mywork">My Work</a></li>
+          <!--<li><a id="aboutMeLink" href="#aboutme">About Me</a></li>-->
           <li><a id="contactMeLink" href="#contactme">Contact Me</a></li>
         </ul>
 
       </nav>
 
   </div>
-</header>
-
-<!-- TITLE -->
-<div>
-    <h1 class="title text-center">
-    Web Developer
-    </h1>
-</div>
-
-<!-- SUBTITLE -->
-
-<div class="subtitle">
-	<h4>
-  	Aspiring web developer keeping it simple by creating
-  	simple responsive applications. I enjoy learning a
-  	thing or two every day to better my skills and
-  	present them to the world. 
-	</h4>
-</div>
-
-  <!-- ============================
-  ===== SOCIAL LINK BUTTONS =====
-  ============================= -->
-<div class="btn-group-wrap">
-    <div class="btn-group">
-        <button type="button" class="btn">LinkedIn</button>
-        <button type="button" class="btn">Github</button>
-        <button type="button" class="btn">Blog</button>
-    </div>
-</div>
-
-
-
-  <!-- ============================
-  ===== SAMPLE PROJECT LINKS ======
-  ============================= -->
-<div id="mywork">
-
-    <h2 id="projects">
-      Projects
-    </h2>
-
-    <div class="section1">
-      <div id="project1" class="col-md-6">
-          <a href="quote.html">
-              <img src="/images/quote-generator.png" class="img-rounded" width="300px" height="200px"/>
-          </a>
-      </div>
-
-      <div id="project2" class="col-md-6">
-          <a href="weather.html">
-              <img src="/images/weather.png" class="img-rounded" width="300px" height="200px"/>
-          </a>
-      </div>
-    </div>
-
-    <div class="section2">
-      <div id="project3" class="col-md-6">
-          <a href="twitchtv.html">
-              <img src="/images/twitchtv.png" class="img-rounded" width="300px" height="200px"/>
-          </a>
-      </div>
-
-      <div id="project4" class="col-md-6">
-          <a href="wikiviewer.html">
-              <img src="/images/wikiviewer.png" class="img-rounded" width="300px" height="200px"/>
-          </a>
-      </div>
-    </div>
-
-    <button id="goUp" class="btn">Home</button>
-
-</div>
-
-
-  <!-- CONTACT ME SECTION -->
-  <div id="contactme">
-    <div class="contactinfo">
-      <p>Contact Form</p>
-      <b>
-        Mobile: (512) 806-8331<br>
-        Email: bsulaimanh@gmail.com<br>
-        Linkedin: URL
-      </b>
-    </div>
-    <button class="btn btn-default">Submit</button>
-    <button id="goUp" class="btn">Up</button>
+  
+  <!-- TITLE -->
+  <div class="container">
+      <h1 class="title">
+      Web Developer
+      </h1>
   </div>
+
+
+    <!-- ============================
+    ====== SOCIAL LINK BUTTONS ======
+    ============================= -->
+
+    <div class="btn-container">
+      <a href="https://www.linkedin.com/in/bilal-hjiouaj-16b6a673/" type="button" class="btn" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="https://github.com/mcmaster-99" type="button" class="btn" target="_blank">
+        Github
+      </a>
+
+      <a href="https://github.com/mcmaster-99" type="button" class="btn" target="_blank">
+        Blog
+      </a>
+    </div>
+
+
+
+
+    <!--
+  ===========================================
+  ===========================================
+  ========== SAMPLE PROJECT LINKS ===========
+  ===========================================
+  ===========================================
+  -->
+  <div id="mywork">
+
+    <!-- ====== Divider ====== -->
+    <div class="container Divider">
+
+      <h2 id="projects-title">
+        <p>Projects</p>
+      </h2>
+
+    </div> <!-- END DIVIDER -->
+
+
+      
+      <div class="section1">
+
+        <!-- ============================
+        ==== QUOTE GENERATOR PROJECT ====
+        ============================= -->
+        <div id="project1" class="col-md-6">
+            <a href="quote.html" id="quoteLink">
+                <img src="/images/quote-generator.png" class="img-rounded" width="300px" height="200px"/>
+            </a>
+        </div>
+
+        <!-- ============================
+        ======= WEATHER PROJECT =========
+        ============================= -->
+        <div id="project2" class="col-md-6">
+            <a href="weather.html" id="weatherLink">
+                <img src="/images/weather.png" class="img-rounded" width="300px" height="200px"/>
+            </a>
+        </div>
+      </div>
+
+      <div class="section2">
+
+        <!-- ============================
+        ======== TWITCH PROJECT =========
+        ============================= -->
+        <div id="project3" class="col-md-6">
+            <a href="twitchtv.html" id="twitchLink">
+                <img src="/images/twitchtv.png" class="img-rounded" width="300px" height="200px"/>
+            </a>
+        </div>
+
+        <!-- ============================
+        ========== WIKI PROJECT =========
+        ============================= -->
+        <div id="project4" class="col-md-6">
+            <a href="wikiviewer.html" id="wikiLink">
+                <img src="/images/wikiviewer.png" class="img-rounded" width="300px" height="200px"/>
+            </a>
+        </div>
+      </div>
+
+      <!-- HOME BUTTON -->
+      <button id="goUp-button" class="btn">Home</button>
+
+  </div> <!-- END MYWORK -->
+
+
+
+  <!-- 
+  ===========================================
+  ===========================================
+  =========== CONTACT ME SECTION ============
+  ===========================================
+  ===========================================
+  -->
+
+  <div id="contactMeContainer">
+
+    <!-- ===== Divider ===== -->
+    <div class="Divider">
+
+      <h2 id="contact-title">
+        Get In Touch
+      </h2>
+
+    </div> <!-- END DIVIDER -->
+
+    <div id="contactme">
+
+      <form action="contact.php" method="POST">
+        
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fullname" placeholder="Your full name...">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email...">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Your message..."></textarea>
+
+      </form>
+
+      <input type="submit" value="Submit">
+
+    </div>
+
+  <!-- HOME BUTTON -->
+  <div class="container goUp-btn-container">
+    <button id="goUp-button" class="btn">Home</button>
+  </div>
+
+  </div>
+
+</div> <!-- END PARALLAX -->
+
+
+
+
+
   <script type="text/javascript" src="scripts/main-script.js"></script>
+
 </body>
 
 </html>

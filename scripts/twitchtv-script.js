@@ -2,6 +2,9 @@ var streamers = ["SypherPK", "Comster404", "dreamhackcs"];
 
 $(document).ready(function(){
 
+  $("body").css("display", "none");
+  $("body").fadeIn(1000);
+
     // BUTTON EFFECTS
   $("#showOnline").click(function(){
     $("#online, #offline, #nonexistent, #box").fadeOut();
