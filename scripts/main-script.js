@@ -16,7 +16,7 @@ $(document).ready(function() {
 		} else if ($(this).get(0).id == "aboutMeLink") {
 			target = $("#aboutme");
 		} else if ($(this).get(0).id == "contactMeLink") {
-			target = $("#contactme");
+			target = $("#contactMeContainer");
 		} else if ($(this).get(0).id == "aboutMeLink") {
 			target = $("#aboutme");
 		} else {

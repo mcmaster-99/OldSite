@@ -21,7 +21,9 @@
   float: none; }
 
 .navbar-nav > li > a {
-  color: white; }
+  color: white;
+  font-family: Open Sans Condensed, sans-serif;
+  font-size: 20px; }
 
 .navbar-nav > li > a:hover {
   background: transparent;
@@ -30,8 +32,8 @@
 .title {
   color: white;
   font-family: Open Sans Condensed, sans-serif;
-  font-size: 100px;
-  margin: 225px;
+  font-size: 7em;
+  margin: 160px;
   text-align: center; }
 
 .subtitle {
@@ -41,13 +43,13 @@
   width: 450px; }
 
 .btn-container {
-  margin: -50px auto 50px auto;
-  width: 27%; }
+  margin: 0px auto 50px auto;
+  width: 30%; }
 
 .btn {
   background: transparent;
   border: 1px solid white;
-  font-size: 25px;
+  font-size: 2em;
   font-family: Open Sans Condensed, sans-serif;
   height: 50px;
   width: 100px; }
@@ -98,10 +100,10 @@ a:active {
   margin-top: 175px; }
 
 #project1, #project2 {
-  margin-top: 100px; }
+  margin-top: 60px; }
 
 #project3, #project4 {
-  margin-top: 50px; }
+  margin-top: 60px; }
 
 .goUp-btn-container {
   width: 140px;
@@ -132,7 +134,7 @@ a:active {
 
 #contactMeContainer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/body-background.jpeg");
-  height: 755px;
+  height: 700px;
   margin-top: -20px;
   /*Needed to do this to prevent white
                         space above divider for some reason*/
