@@ -4,7 +4,7 @@
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0 maximum-scale=1.0">
 
 <title>Bilal&#39;s Portfolio Site</title>
 <meta name="description" content="A portfolio of all my projects, current and past.">
@@ -55,10 +55,10 @@
 
 
     <!-- ============================
-    ====== SOCIAL LINK BUTTONS ======
+    ====== PROFILE LINK BUTTONS ======
     ============================= -->
 
-    <div class="btn-container">
+    <div class="profile-btns-container">
       <a href="https://www.linkedin.com/in/bilal-hjiouaj-16b6a673/" type="button" class="btn" target="_blank">
         LinkedIn
       </a>
@@ -82,13 +82,13 @@
   ===========================================
   ===========================================
   -->
-  <div id="mywork">
+  <div id="myWorkPageContainer">
 
     <!-- ====== Divider ====== -->
-    <div class="container Divider">
+    <div class="container projectsDivider">
 
       <h2 id="projects-title">
-        <p>Projects</p>
+        Projects
       </h2>
 
     </div> <!-- END DIVIDER -->
@@ -138,7 +138,9 @@
       </div>
 
       <!-- HOME BUTTON -->
-      <button id="goUp-button" class="btn">Home</button>
+      <div class="container projects-goUp-btn-container">
+        <button id="goUp-button" class="btn">Home</button>
+      </div>
 
   </div> <!-- END MYWORK -->
 
@@ -152,10 +154,10 @@
   ===========================================
   -->
 
-  <div id="contactMeContainer">
+  <div id="contactMePageContainer">
 
     <!-- ===== Divider ===== -->
-    <div class="Divider">
+    <div class="container contactMeDivider">
 
       <h2 id="contact-title">
         Get In Touch
@@ -163,6 +165,7 @@
 
     </div> <!-- END DIVIDER -->
 
+    
     <div id="contactme">
 
       <form action="contact.php" method="POST">
@@ -173,19 +176,20 @@
         <label for="email">Email</label>
         <input type="text" id="email" name="email" placeholder="Your email...">
 
-        <label for="subject">Subject</label>
+        <label for="subject" id="subjectText">Subject</label>
         <textarea id="subject" name="subject" placeholder="Your message..."></textarea>
 
       </form>
-
-      <input type="submit" value="Submit">
+      <div class="container submit">
+        <input id="submit" type="submit" value="Submit">
+      </div>
 
     </div>
-
-  <!-- HOME BUTTON -->
-  <div class="container goUp-btn-container">
-    <button id="goUp-button" class="btn">Home</button>
-  </div>
+  
+    <!-- HOME BUTTON -->
+    <div class="container contactme-goUp-btn-container">
+      <button id="goUp-button" class="btn">Home</button>
+    </div>
 
   </div>
 

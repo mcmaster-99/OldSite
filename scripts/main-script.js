@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
-	$("body").css("display", "none");
-    $("body").fadeIn(1500);
+	/*$("body").css("display", "none");
+    $("body").fadeIn(1500);*/
 
 
 	$("#goUp-button, #aboutMeLink, #myWorkLink, #contactMeLink").click(function(e) {
@@ -12,11 +12,11 @@ $(document).ready(function() {
 		if ($(this).get(0).id == "goUp-button") {
 			target = $("#homeLink");
 		} else if ($(this).get(0).id == "myWorkLink") {
-			target = $("#mywork");
+			target = $("#myWorkPageContainer");
 		} else if ($(this).get(0).id == "aboutMeLink") {
 			target = $("#aboutme");
 		} else if ($(this).get(0).id == "contactMeLink") {
-			target = $("#contactMeContainer");
+			target = $("#contactMePageContainer");
 		} else if ($(this).get(0).id == "aboutMeLink") {
 			target = $("#aboutme");
 		} else {
@@ -33,7 +33,7 @@ $(document).ready(function() {
 	=============================
     ======== FADE EFFECTS =======
     =============================
-    */
+    
 
     function redirectPage() {
 		window.location = linkLocation;
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 		linkLocation = this.href;
 		$("body").fadeOut(1000, redirectPage());
-	});
+	});*/
 	
 
 });

@@ -20,7 +20,7 @@ $Josefin: Open Sans Condensed, sans-serif;
             ),
         url('/images/body-background.jpeg');
 
-    height: 1000px;
+    height: 850px;
 
     background-attachment: fixed;
     background-position: center;
@@ -29,9 +29,52 @@ $Josefin: Open Sans Condensed, sans-serif;
 
 }
 
+@media only screen /* ### IPHONE 6 (PORTRAIT) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: portrait) {
+    .parallax {
+
+        background-image: 
+            linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+                ),
+            url('/images/body-background.jpeg');
+
+        height: 750px;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media only screen /* ### IPHONE 6 (LANDSCAPE) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: landscape) {
+    .parallax {
+
+        background-image: 
+            linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+                ),
+            url('/images/body-background.jpeg');
+
+        height: 750px;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 .navbar-nav {
     float: none;
-    margin: 0 auto;
+    margin: 10 auto;
     display: block;
     text-align: center;
 }
@@ -53,28 +96,65 @@ $Josefin: Open Sans Condensed, sans-serif;
 .title {
     color: white;
     font-family: $Josefin;
-    font-size: 7em;
+    font-size: 100px;
     margin: 160px;
     text-align: center;
 }
-
-.subtitle {
-    color: white;
-    font-family: $Josefin;
-    margin: 75px auto 0 425px;
-    width: 450px;
+@media only screen /* ### IPHONE 6 (PORTAIT) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: portrait) {
+    .title {
+        color: white;
+        font-family: $Josefin;
+        font-size: 4em;
+        margin: 50px;
+        text-align: center;
+    }
+}
+@media only screen /* ### IPHONE 6 (LANDSCAPE) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: landscape) {
+    .title {
+        color: white;
+        font-family: $Josefin;
+        font-size: 3em;
+        margin: 50px;
+        text-align: center;
+    }
 }
 
-.btn-container {
-    margin: 0px auto 50px auto;
-    width: 30%;
+.profile-btns-container {
+    width: 100%;
+    margin-top: 35px;
+    text-align: center;
 }
+@media only screen  /* ### IPHONE 6 (PORTRAIT) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: portrait) {
+    .profile-btns-container {
+        width: 100%;
+        margin: 60px auto 0px -10px;
+    }
+}
+@media only screen  /* ### IPHONE 6 (LANDSCAPE) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: landscape) {
+    .profile-btns-container {
+        margin: 25px auto;
+        width: 100%;
+    }
+}
+
 .btn {
     background: transparent;
     border: 1px solid white;
-    font-size: 2em;
+    font-size: 20px;
     font-family: $Josefin;
-    height: 50px;
+    height: 40px;
     width: 100px;
 }
 a {
@@ -100,25 +180,26 @@ a:active {
 }
 
 
-/*  ======================
-    ======= Page 2 =======
-    ====================== */
+/*  =============================================================
+    =============================================================
+    ===================== Page 2 (projects) =====================
+    =============================================================
+    ============================================================= */
 
-.Divider {
+.projectsDivider {
     background: white;
-    height: 100px;
+    height: 65px;
     width: 100%;
 }
 
-#projects-title > p {
-
+#projects-title {
     color: black;
     font-family: $Josefin;
     font-size: 50px;
-    margin: 0px auto 0px auto;
+    margin-top: 0px;
 }
 
-#mywork {
+#myWorkPageContainer {
 
     background-image: 
         linear-gradient(
@@ -133,24 +214,90 @@ a:active {
 
     height: 1000px;
 
-
     text-align: center;
     font-family: cursive;
-    margin-top: 175px;
+    margin-top: 275px;
 }
 
-#project1, #project2 {
+@media only screen  /* ### IPHONE 6 (PORTRAIT) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: portrait) {
+    #myWorkPageContainer {
+
+        background-image: 
+            linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+                ),
+            url('/images/body-background2.jpeg');
+
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 1000px;
+
+        text-align: center;
+        font-family: cursive;
+        margin-top: 275px;
+    }
+    #project1, #project2, #project3, #project4 {
+        margin-top: 20px !important;
+    }
+    .projects-goUp-btn-container {
+        width: 140px;
+        margin: 55px auto 0px auto;
+    }
+}
+
+@media only screen  /* ### IPHONE 6 (LANDSCAPE) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: landscape) {
+    #myWorkPageContainer {
+
+        background-image: 
+            linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+                ),
+            url('/images/body-background2.jpeg');
+
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 1000px;
+
+        text-align: center;
+        font-family: cursive;
+        margin-top: 275px;
+    }
+    #project1, #project2, #project3, #project4 {
+        margin-top: 20px !important;
+    }
+    .projects-goUp-btn-container {
+        width: 140px;
+        margin: 55px auto 0px auto;
+    }
+}
+
+#project1, #project2, #project3, #project4 {
     margin-top: 60px;
 }
 
-#project3, #project4 {
-    margin-top: 60px;
+.projects-goUp-btn-container {
+    width: 100%;
+    margin: 0px auto 0px auto;
+}
+@media only screen and (max-width: 667px) {
+    .projects-goUp-btn-container {
+        width: 100%;
+        margin: 55px auto 0px auto;
+    }
 }
 
-.goUp-btn-container {
-    width: 140px;
-    margin: 50px auto 0px auto;
-}
 #goUp-button {
     color: white;
     transition-duration: .5s;
@@ -167,20 +314,26 @@ a:active {
 
 
 
-/*  ======================
-    ======= Page 3 =======
-    ====================== */
+/*  =======================================================================
+    =======================================================================
+    ============================= PAGE 3 ==================================
+    =======================================================================
+    ======================================================================= */
 
+.contactMeDivider {
+    background: white;
+    height: 70px;
+    width: 100%;
+}
 #contact-title {
-
     color: black;
-    text-align: center;
     font-family: $Josefin;
     font-size: 50px;
-    font-weight: bold;
+    margin-top: 0px;
+    text-align: center;
 }
 
-#contactMeContainer {
+#contactMePageContainer {
     
     background-image: 
         linear-gradient(
@@ -189,9 +342,7 @@ a:active {
             ),
         url('/images/body-background.jpeg');
 
-    height: 700px;
-    margin-top: -20px; /*Needed to do this to prevent white
-                        space above divider for some reason*/
+    height: 850px;
 
     background-attachment: fixed;
     background-position: center;
@@ -216,12 +367,133 @@ a:active {
     height: 100px;
 }
 
+@media only screen  /* ### IPHONE 6 (PORTRAIT) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: portrait) {
+    #contactMePageContainer {
+        background-image: 
+            linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+                ),
+            url('/images/body-background.jpeg');
+
+        height: 670px;
+
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #contactme {
+
+        box-shadow: 0px 0px 10px navy;
+        border: solid navy;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: $light-grey;
+        width: 80%;
+        height: 350px;
+        margin: 75px auto 0px auto;
+
+    }
+    #submit {
+
+        background-color: $grey;
+        color: navy;
+        padding: 5px 15px;
+        border-radius: 4px;
+        width: 35%;
+        margin: 0 auto 0 75px;
+    }
+    
+}
+@media only screen  /* ### IPHONE 6 (LANDSCAPE) ### */
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: landscape) {
+    #contactMePageContainer {
+        background-image: 
+            linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+                ),
+            url('/images/body-background.jpeg');
+
+        height: 670px;
+
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #contactme {
+
+        box-shadow: 0px 0px 10px navy;
+        border: solid navy;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: $light-grey;
+        width: 90%;
+        height: 225px;
+        margin: 15px auto 0px auto;
+    }
+
+    #fname, #email {
+        width: 37%;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin: 10px auto 10px auto;
+    }
+    #subjectText{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #subject {
+        width: 100%;
+        height: 75px;
+
+    }
+    #submit {
+
+        background-color: $grey;
+        color: navy;
+        padding: 5px 15px;
+        border-radius: 4px;
+        width: 25%;
+        margin: -20px auto 0px 205px;
+    }
+    #goUp-button {
+        width: 15%;
+        margin-top: -55px;
+        text-align: center;
+    }
+    
+}
+
+.contactme-goUp-btn-container {
+    width: 150px;
+    margin: 100px auto 0px auto;
+}
+@media only screen
+and (min-width: 375px)
+and (max-width: 667px) {
+    .contactme-goUp-btn-container {
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
 input[type=text], select, textarea {
     width: 100%;
     border-radius: 5px;
     box-sizing: border-box;
-    margin: 10px auto 16px auto;
-    resize: vertical;
+    margin: 10px auto 10px auto;
 }
 input[type=submit] {
 
@@ -229,7 +501,8 @@ input[type=submit] {
     color: navy;
     padding: 5px 15px;
     border-radius: 4px;
-    margin: 0 auto 0 40%;
+    width: 20%;
+    margin: 15px auto 0px 240px;
 }
 input[type=submit]:hover {
     
